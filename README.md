@@ -15,7 +15,7 @@ This makes the text inside the svg images searchable.
   
 Install the plugin using pip:
   
-`pip install mkdocs-svg2img-plugin`
+`pip install git+https://github.com/mrieg7734/mkdocs-svg2obj-plugin.git`
   
 Activate the plugin in `mkdocs.yml`:
 ```yaml
