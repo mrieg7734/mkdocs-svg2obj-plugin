@@ -1,0 +1,5 @@
+site_name: svg2obj example
+
+plugins:
+    - search
+    - svg2obj
