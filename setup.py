@@ -9,7 +9,7 @@ def read_file(fname):
 
 setup(
     name='mkdocs-svg2obj-plugin',
-    version='0.1.0',
+    version='0.1.1',
     description='A MkDocs plugin that converts markdown encoded svg images into obj elements.',
 	long_description=read_file('README.md'),
     long_description_content_type='text/markdown',

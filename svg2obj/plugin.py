@@ -9,7 +9,9 @@ class SvgToObjPlugin(BasePlugin):
         pattern = re.compile(r"!\[(.*?)\]\((.*?)\.svg\)", flags=re.IGNORECASE)
         
         markdown = re.sub(pattern,
-            r'<object type="image/svg+xml" data="../\2.svg" height="auto" width="100%"></object>\n' + \
+            r'<object type="image/svg+xml" data="../\2.svg" height="auto" width="100%">\n' + \
+            r'<img src="../\2.svg" alt="\1" />' + \
+            r'</object>\n' + \
             r'<p><center>\1</center></p>',                 
             markdown)     
 
